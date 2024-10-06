@@ -1,0 +1,242 @@
+ets Z�K��.1[0m
+[0;32�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct  7 2024 00:16:37[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a960h ( 43360) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001a988 vaddr=3ffb0000 size=02190h (  8592) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001cb20 vaddr=40080000 size=034f8h ( 13560) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1613ch ( 90428) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036164 vaddr=400834f8 size=0a13ch ( 41276) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x40081208[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (228) cpu_start: Project name:     bme280[0m
+[0;32mI (233) cpu_start: App version:      1[0m
+[0;32mI (237) cpu_start: Compile time:     Oct  7 2024 00:16:21[0m
+[0;32mI (243) cpu_start: ELF file SHA256:  d27bc619861f7214...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (255) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (259) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (264) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (276) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB2A10 len 0002D5F0 (181 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 4008D634 len 000129CC (74 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (330) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (344) BME280: BME280 initialized successfully[0m
+[0;32mI (354) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (2364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (4364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (6364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (8364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (10364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (12364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (14364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (16364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (18364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (20364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (22364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (24364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (26364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (28364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (30364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (32364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (34364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (36364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (38364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (40364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (42364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (44364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (46364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (48364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (50364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (52364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (54364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (56364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (58364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (60364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (62364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (64364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (66364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (68364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (70364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (72364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (74364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (76364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (78364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (80364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (82364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (84364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (86364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (88364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (90364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (92364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (94364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (96364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (98364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (100364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (102364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (104364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (106364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (108364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (110364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (112364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (114364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (116364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (118364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (120364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (122364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (124364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (126364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (128364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (130364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (132364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (134364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (136364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (138364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (140364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (142364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (144364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (146364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (148364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (150364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (152364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (154364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (156364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (158364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (160364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (162364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (164364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (166364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (168364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (170364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (172364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (174364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa
+[0;32mI (176364) BME280: Temperature: 5242.88 C, Pressure: 5242.88 hPa, Humidity: 32.00 %[0m
+Temperature: 5242.88 C, Humidity: 32.00 %, Pressure: 5242.88 hPa

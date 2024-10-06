@@ -1,0 +1,182 @@
+ets���� v3.1[0m
+[0;3ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct  7 2024 00:16:37[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a620h ( 42528) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001a648 vaddr=3ffb0000 size=02190h (  8592) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001c7e0 vaddr=40080000 size=03838h ( 14392) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=152a4h ( 86692) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000352cc vaddr=40083838 size=09cf0h ( 40176) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x40081200[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     bme280[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Oct  7 2024 00:16:21[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  f57ed727f92a9d9a...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB2A10 len 0002D5F0 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008D528 len 00012AD8 (74 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) BME280: BME280 initialized[0m
+[0;32mI (342) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (2352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (4352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (6352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (8352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (10352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (12352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (14352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (16352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (18352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (20352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (22352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (24352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (26352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (28352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (30352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (32352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (34352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (36352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (38352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (40352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (42352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (44352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (46352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (48352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (50352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (52352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (54352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (56352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (58352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (60352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (62352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (64352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (66352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (68352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (70352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (72352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (74352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (76352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (78352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (80352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (82352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (84352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (86352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (88352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (90352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (92352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (94352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (96352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (98352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (100352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (102352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (104352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (106352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (108352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (110352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (112352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (114352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa
+[0;32mI (116352) BME280: BME280 data read[0m
+Temperature: 25.00 C, Humidity: 50.00 %, Pressure: 1013.25 hPa

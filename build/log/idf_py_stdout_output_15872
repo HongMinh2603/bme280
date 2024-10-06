@@ -1,0 +1,96 @@
+ets���K��.1[0m
+[0;�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct  7 2024 00:16:37[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa28h ( 43560) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001aa50 vaddr=3ffb0000 size=02190h (  8592) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001cbe8 vaddr=40080000 size=03430h ( 13360) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16724h ( 91940) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=0003674c vaddr=40083430 size=0a204h ( 41476) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu up.[0m
+[0;32mI (206) cpu_start: Starting app cpu, entry point is 0x40081208[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (229) cpu_start: Project name:     bme280[0m
+[0;32mI (234) cpu_start: App version:      1[0m
+[0;32mI (238) cpu_start: Compile time:     Oct  7 2024 00:16:21[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  eeeb7a15d54bd906...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (255) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2A38 len 0002D5C8 (181 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008D634 len 000129CC (74 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (355) BME280: BME280 initialized successfully[0m
+[0;32mI (355) BME280: Temperature: 26.75 C, Pressure: 1014.14 hPa, Humidity: 40.62 %[0m
+Temperature: 26.75 C, Humidity: 40.62 %, Pressure: 1014.14 hPa
+[0;32mI (2365) BME280: Temperature: 26.77 C, Pressure: 1014.09 hPa, Humidity: 40.54 %[0m
+Temperature: 26.77 C, Humidity: 40.54 %, Pressure: 1014.09 hPa
+[0;32mI (4365) BME280: Temperature: 26.79 C, Pressure: 1014.18 hPa, Humidity: 40.85 %[0m
+Temperature: 26.79 C, Humidity: 40.85 %, Pressure: 1014.18 hPa
+[0;32mI (6365) BME280: Temperature: 26.79 C, Pressure: 1014.07 hPa, Humidity: 40.14 %[0m
+Temperature: 26.79 C, Humidity: 40.14 %, Pressure: 1014.07 hPa
+[0;32mI (8365) BME280: Temperature: 26.78 C, Pressure: 1014.14 hPa, Humidity: 40.08 %[0m
+Temperature: 26.78 C, Humidity: 40.08 %, Pressure: 1014.14 hPa
+[0;32mI (10365) BME280: Temperature: 26.80 C, Pressure: 1014.14 hPa, Humidity: 41.56 %[0m
+Temperature: 26.80 C, Humidity: 41.56 %, Pressure: 1014.14 hPa
+[0;32mI (12365) BME280: Temperature: 26.82 C, Pressure: 1014.13 hPa, Humidity: 42.74 %[0m
+Temperature: 26.82 C, Humidity: 42.74 %, Pressure: 1014.13 hPa
+[0;32mI (14365) BME280: Temperature: 26.84 C, Pressure: 1014.19 hPa, Humidity: 42.46 %[0m
+Temperature: 26.84 C, Humidity: 42.46 %, Pressure: 1014.19 hPa
+[0;32mI (16365) BME280: Temperature: 26.82 C, Pressure: 1014.18 hPa, Humidity: 41.24 %[0m
+Temperature: 26.82 C, Humidity: 41.24 %, Pressure: 1014.18 hPa
+[0;32mI (18365) BME280: Temperature: 26.80 C, Pressure: 1014.10 hPa, Humidity: 40.83 %[0m
+Temperature: 26.80 C, Humidity: 40.83 %, Pressure: 1014.10 hPa
+[0;32mI (20365) BME280: Temperature: 26.81 C, Pressure: 1014.08 hPa, Humidity: 40.82 %[0m
+Temperature: 26.81 C, Humidity: 40.82 %, Pressure: 1014.08 hPa
+[0;32mI (22365) BME280: Temperature: 26.83 C, Pressure: 1014.15 hPa, Humidity: 40.78 %[0m
+Temperature: 26.83 C, Humidity: 40.78 %, Pressure: 1014.15 hPa
+[0;32mI (24365) BME280: Temperature: 26.84 C, Pressure: 1014.16 hPa, Humidity: 41.01 %[0m
+Temperature: 26.84 C, Humidity: 41.01 %, Pressure: 1014.16 hPa
+[0;32mI (26365) BME280: Temperature: 26.83 C, Pressure: 1014.06 hPa, Humidity: 41.02 %[0m
+Temperature: 26.83 C, Humidity: 41.02 %, Pressure: 1014.06 hPa
+[0;32mI (28365) BME280: Temperature: 26.83 C, Pressure: 1014.07 hPa, Humidity: 40.97 %[0m
+Temperature: 26.83 C, Humidity: 40.97 %, Pressure: 1014.07 hPa
+[0;32mI (30365) BME280: Temperature: 26.84 C, Pressure: 1014.11 hPa, Humidity: 41.24 %[0m
+Temperature: 26.84 C, Humidity: 41.24 %, Pressure: 1014.11 hPa
